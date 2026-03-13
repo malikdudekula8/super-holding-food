@@ -1,0 +1,47 @@
+Header Component Styles .header-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header-image {
+  flex-shrink: 0;
+  padding-right: 120px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.header-nav a,
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link.active {
+  color: white;
+  background-color: #065b5e;
+  box-shadow: 0 4px 12px rgba(6, 91, 94, 0.3);
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-icons {
+  padding-left: 150px;
+  gap: 1rem;
+}
