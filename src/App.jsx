@@ -1,7 +1,20 @@
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import ScrollToTop from "./components/ScrollToTop";
+import { HomeProvider, navItems } from "./components/ResturentContext/Context";
+
 function App() {
   return (
     <div>
-      <h1>Super Holding Food</h1>
+      <HomeProvider>
+        <ScrollToTop />
+        <Header />
+        <Routes>
+          {navItems.map((item) => (
+            <Route key={item.path} path={item.path} element={item.element} />
+          ))}
+        </Routes>
+      </HomeProvider>
     </div>
   );
 }
