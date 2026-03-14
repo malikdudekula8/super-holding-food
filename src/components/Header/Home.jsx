@@ -1,12 +1,65 @@
-import React from "react";
+import { useHook } from "../ResturentContext/Context";
 
 function Home() {
+  const { subTitle, titleDescription } = useHook();
+
   return (
-    <div className="page-content p-8">
-      <h1 className="text-4xl font-bold">Welcome to Super Restaurant</h1>
-      <p className="text-lg mt-4">
-        Discover our delicious menu and amazing service.
-      </p>
+    <div className="hero-section flex items-center justify-start">
+      <div>
+        <div>
+          <h1
+            className="text-6xl font-bold text-left"
+            style={{
+              maxWidth: "800px",
+              lineHeight: "1.0",
+              paddingTop: "100px",
+            }}
+          >
+            {subTitle}
+            <br />
+            <span style={{ color: "#FF4033" }}>Breakfast</span>
+          </h1>
+        </div>
+
+        <p
+          className="text-lg text-gray-700 leading-relaxed mb-8 text-left"
+          style={{
+            maxWidth: "500px",
+            lineHeight: "1.8",
+            paddingRight: "121px",
+          }}
+        >
+          {titleDescription}
+        </p>
+
+        <div className="home-buttons flex">
+          <button className="home-order-button">Order Now</button>
+          <button className="home-signin-button">Sign In</button>
+        </div>
+      </div>
+      <div style={{ position: "relative", width: "570px" }}>
+        <img src="/Home_main.png" alt="Home" className="home-main-img" />
+
+        <img src="/Delivery.png" alt="frame" className="home-delivery-img" />
+        <img src="/Nearest.png" alt="frame" className="home-Nearest-img" />
+        <img
+          src="/Bookyourtable.png"
+          alt="frame"
+          className="home-Bookyourtable-img"
+        />
+        <img
+          src="/Customerreview.png"
+          alt="frame"
+          className="home-Customerreview-img"
+          style={{
+            position: "absolute",
+            top: "483px",
+            left: "455px",
+            zIndex: 2,
+            pointerEvents: "none",
+          }}
+        />
+      </div>
     </div>
   );
 }

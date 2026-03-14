@@ -1,11 +1,4 @@
-Header Component Styles .header-container {
-  display: flex;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
 .header-image {
-  flex-shrink: 0;
   padding-right: 120px;
 }
 
@@ -13,7 +6,6 @@ Header Component Styles .header-container {
   display: flex;
   gap: 1rem;
   margin-left: 2rem;
-  align-items: center;
 }
 
 .header-nav a,
@@ -26,8 +18,9 @@ Header Component Styles .header-container {
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   padding: 0.5rem 1rem;
   border-radius: 25px;
-  display: inline-block;
-  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .nav-link.active {
@@ -44,4 +37,84 @@ Header Component Styles .header-container {
 .header-icons {
   padding-left: 150px;
   gap: 1rem;
+}
+
+.home-buttons {
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.home-order-button {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: white;
+  background-color: #065b5e;
+  box-shadow: 0 4px 12px rgba(6, 91, 94, 0.3);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-signin-button {
+  border-radius: 25px;
+  border: 2px solid #ff4033;
+  box-shadow: 0 4px 12px rgba(255, 167, 157, 0.948);
+  color: #ff4033;
+  background-color: aliceblue;
+  translate: initial;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-signin-button:hover {
+  box-shadow: 0 10px 25px rgb(245, 114, 105);
+  transform: translateX(-2px);
+}
+
+.home-main-img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding-left: 90px;
+  margin-top: 20px;
+}
+
+.home-delivery-img {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  z-index: 2;
+  pointer-events: none;
+  margin-top: 94px;
+}
+
+.home-Nearest-img {
+  position: absolute;
+  top: 139px;
+  left: 526px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.home-Bookyourtable-img {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  z-index: 2;
+  pointer-events: none;
+  margin-top: 357px;
+}
+
+.home-Customerreview-img {
+  position: absolute;
+  top: 483px;
+  left: 455px;
+  z-index: 2;
+  pointer-events: none;
 }

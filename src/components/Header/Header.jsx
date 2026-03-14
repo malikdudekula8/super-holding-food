@@ -10,7 +10,10 @@ function Header() {
   const location = useLocation();
 
   return (
-    <div className="header-container flex items-center gap-12 px-8 pt-[26px] pb-6 bg-white shadow-md">
+    <div
+      className="header-container flex items-center px-8 pt-[26px] pb-6 bg-white shadow-md"
+      style={{ gap: "128px" }}
+    >
       <Link to="/">
         <div className="header-image flex-shrink-0">
           <img src="/Capa_1-2.png" alt="Header" className="h-20 w-auto" />
