@@ -33,3 +33,11 @@ export const useHook = () => {
   }
   return context;
 };
+
+export const AboutTitle =
+  "Bringing people together through delicious food, warm hospitality, and a passion for great service.";
+export const AboutDescription =
+  "Platea nisi aliquet ipsum faucibus tincidunt mattis pellentesque pulvinar. Aliquam urna lorem venenatis amet ipsum. Duis nec volutpat sagittis enim non vitae aenean fringilla lacinia. Egestas tempor sit facilisi neque mattisquis.";
+export const AboutHappyCustomer = "Happy Customer";
+export const GustSatisfactions = "Gust Satisfactions";
+export const GustExperience = "Gust Experience";

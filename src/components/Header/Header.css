@@ -118,3 +118,32 @@
   z-index: 2;
   pointer-events: none;
 }
+
+.stat-box {
+  margin-top: 4%;
+}
+
+.stat-number {
+  font: caption;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.stat-sub-number {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ash-underline {
+  color: #6b7280; /* ash / gray color */
+  text-decoration: overline;
+}
+
+.rounded-video {
+  width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+}
