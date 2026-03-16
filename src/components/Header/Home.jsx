@@ -1,4 +1,5 @@
 import { useHook } from "../ResturentContext/Context";
+import About from "./About";
 
 function Home() {
   const { subTitle, titleDescription } = useHook();
@@ -98,6 +99,7 @@ function Home() {
           <img src="/Footer-img.png" alt="frame" width="82%" />
         </div>
       </div>
+      <About />
     </>
   );
 }
