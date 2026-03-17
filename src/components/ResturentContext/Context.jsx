@@ -41,3 +41,9 @@ export const AboutDescription =
 export const AboutHappyCustomer = "Happy Customer";
 export const GustSatisfactions = "Gust Satisfactions";
 export const GustExperience = "Gust Experience";
+const columnDefs = [
+  { headerName: "User ID", field: "userId" },
+  { headerName: "ID", field: "id" },
+  { headerName: "Title", field: "title", flex: 1 },
+  { headerName: "Body", field: "body", flex: 2 },
+];

@@ -1,5 +1,6 @@
 import { useHook } from "../ResturentContext/Context";
 import About from "./About";
+import UserDetails from "./UsersDetails";
 
 function Home() {
   const { subTitle, titleDescription } = useHook();
@@ -100,6 +101,7 @@ function Home() {
         </div>
       </div>
       <About />
+      <UserDetails />
     </>
   );
 }
